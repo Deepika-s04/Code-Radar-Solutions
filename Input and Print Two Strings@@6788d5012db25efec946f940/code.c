@@ -3,7 +3,7 @@
 char s1[10];
 char s2[10];
 scanf("%s",&s1);
-scanf("%s",&s2)
+scanf("%s",&s2);
 
 
 int main() {
