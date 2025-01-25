@@ -4,9 +4,7 @@ int main() {
     char username[100];
     int age;
     char hobby[100];
-    scanf("%s",&username);
-    scanf("%d",&age);
-    scanf("%s",hobby);
+    scanf("%s %d %s",&username,&age,&hobby);
     printf("Name: %s\n",name);
     printf("Age: %d\n",age);
     printf("Hobby: %s\n",hobby);
