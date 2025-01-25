@@ -2,7 +2,7 @@
 
 
 int main() {
-    int radius;
+    float radius;
     scanf("%f",&radius);
     const float pi = 3.14;
     float area = pi * radius * radius;
