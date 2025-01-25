@@ -4,6 +4,6 @@ int radius;
 const pi =3.14;
 float area = (float)(pi*radius*radius);
 int main() {
-    printf("%f",area);
+    printf("%.2f",area);
     return 0;
 }
