@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int radius;
-scanf("%d",&radius);
+float radius;
+scanf("%f",&radius);
 const pi =3.14;
 float area = (float)(pi*radius*radius);
 int main() {
