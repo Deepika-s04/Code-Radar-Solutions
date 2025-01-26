@@ -4,7 +4,7 @@ int main() {
     
     int n, m;
     scanf("%d %d",&n,&m);
-    if(n||m > 0){
+    if(n > 0 || m > 0){
         printf("True\n");
     }else{
         printf("False");
