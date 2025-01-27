@@ -4,9 +4,9 @@ int main() {
     int a,b;
     scanf("%d %d",&a,&b);
     if(a>b){
-        printf("%d",&a);
+        printf(" a is greater %d",&a);
     }else{
-        printf("%d",&b);
+        printf("b is greater %d",&b);
     }
         return 0;
 }
