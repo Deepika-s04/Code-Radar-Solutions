@@ -5,11 +5,11 @@ char* welcome() {
 }
 
 int main() {
-    int character;
-    scanf("%c",&character);
-    if(character.isUpper()){
-        printf("Uppercase");
-    }else{
+    int c;
+    scanf("%c",&c;
+    if(c.isUpper()){
+        printf("Uppercase\n");
+    }else if(c.isLower()){
         printf("Lowercase");
     }
     return 0;
