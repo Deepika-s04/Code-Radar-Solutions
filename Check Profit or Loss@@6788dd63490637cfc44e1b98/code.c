@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     int costPrice,sellingPrice;
     scanf("%d %d",&costPrice,sellingPrice);
