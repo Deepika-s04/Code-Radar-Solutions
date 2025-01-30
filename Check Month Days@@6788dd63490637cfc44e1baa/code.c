@@ -9,10 +9,9 @@ int main() {
         case 7:
         case 8:
         case 10:
-        case 12:
-         printf("31");
+        case 12:printf("31");
         break;
-        case 2:  printf("28");
+        case 2: printf("28");
         break;
         case 4:
         case 6:
