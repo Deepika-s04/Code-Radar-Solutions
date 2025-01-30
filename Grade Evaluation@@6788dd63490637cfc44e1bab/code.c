@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main() {
-    char ch;
-    scanf("%c",&ch);
-    if(ch=='A'){
+    char c;
+    scanf("%c",&c);
+    if(c=='A'){
         printf("Excellent");
-    }else if(ch=='B'){
+    }else if(c=='B'){
         printf("Good");
-    }else if(ch=='C'){
+    }else if(c=='C'){
         printf("Average");
-    }else if(ch=='D'){
+    }else if(c=='D'){
         printf("Below Average");
     }else{
         printf("Fail");
