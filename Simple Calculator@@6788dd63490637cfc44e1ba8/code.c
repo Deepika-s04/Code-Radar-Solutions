@@ -10,7 +10,7 @@ int main() {
     }else if(oper == '-'){
         printf("%d",num1-num2);
     }else if(oper == '*'){
-        printf("5d",num1*num2);
+        printf("%d",num1*num2);
     }else if(oper == '/'){
         printf("%d",num1/num2);
     }else{
