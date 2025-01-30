@@ -1,15 +1,16 @@
 #include <stdio.h>
 int main() {
     int num1,num2;
-    char operator;
-    scanf("%d %d %c",&num1,&num2,&operator);
-    if(operator == '+'){
+    char oper;
+    scanf("%d %d %c",&num1,&num2,&oper);
+    
+    if(oper == '+'){
         printf("%d",num1+num2);
-    }else if(operator == '-'){
+    }else if(oper == '-'){
         printf("%d",num1-num2);
-    }else if(operator == '*'){
+    }else if(oper == '*'){
         printf("5d",num1*num2);
-    }else if(operator == '/'){
+    }else if(oper == '/'){
         printf("%d",num1/num2);
     }else{
         printf("Error");
