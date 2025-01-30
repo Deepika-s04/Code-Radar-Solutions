@@ -8,6 +8,8 @@ int main() {
         printf("Go");
     }else if(c=='Y'){
         printf("slow Down");
+    }else{
+        printf("Invalid input")
     }
     return 0;
 }
