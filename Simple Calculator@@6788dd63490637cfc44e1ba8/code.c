@@ -15,8 +15,9 @@ int main() {
         /*if(num2 == 0){
             printf("Error:Division by zero");
         }else{
-            */printf("%d",num1/num2);
-        }
+            */
+        printf("%d",num1/num2);
+        
     }else{
         printf("Error");
     }
