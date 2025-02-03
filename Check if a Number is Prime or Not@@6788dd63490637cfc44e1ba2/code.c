@@ -2,12 +2,17 @@
 
 
 int main() {
-    int n;
+    int n,a;
     scanf("%d",&n);
-    if(n>1 && n%1==0 && n%n==0){
-        printf("Prime");
-    }else{
-        printf("Not Prime");
+
+    for(a = 2; a <= n/2; a++){
+        if(n%a == 0){
+            printf("Not Prime");
+            break;
+        }else{
+            printf("Prime");
+        }
     }
+
     return 0;
 }
