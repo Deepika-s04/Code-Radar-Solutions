@@ -1,14 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
 
 int main() {
-    int n,a;
+    int n,a,isPrime=1;
     scanf("%d",&n);
 
-    for(a = 2; a <= n/2; a++){
+    if(n==0){
+        printf("Not Prime");
+    }
+
+    for(a = 2; a <= sqrt(n); a++){
         if(n%a == 0){
             printf("Not Prime");
-            break;
         }else{
             printf("Prime");
         }
