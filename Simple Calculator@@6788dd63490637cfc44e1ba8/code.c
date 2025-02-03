@@ -2,8 +2,7 @@
 int main() {
     int num1,num2;
     char oper;
-    scanf("%d %d ",&num1,&num2);
-    scanf(" %c",&oper);
+    scanf("%d %d %c",&num1,&num2,&oper);
 
     if(oper == '+'){
         printf("%d",num1+num2);
@@ -12,10 +11,10 @@ int main() {
     }else if(oper == '*'){
         printf("%d",num1*num2);
     }else if(oper == '/'){
-        if(num2 == 0){
-            printf("Error:Division by zero");
-        }else{
+        if(num2 != 0){
             printf("%d",num1/num2);
+        }else{
+            printf("error");
         }
     }else{
         printf("Error: Invalid operator");
