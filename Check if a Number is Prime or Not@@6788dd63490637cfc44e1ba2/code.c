@@ -8,11 +8,13 @@ int main() {
 
     if(n==0){
         printf("Not Prime");
+        return 0;
     }
 
     for(a = 2; a <= sqrt(n); a++){
         if(n%a == 0){
             printf("Not Prime");
+            return 0;
         }else{
             printf("Prime");
         }
