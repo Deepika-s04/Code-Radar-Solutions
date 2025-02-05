@@ -2,8 +2,8 @@
 int main() {
    int a,b,clear;
    scanf("%d %d",&a,&b);
-   clear = a & (~(1>>b));
-   printf("%d",clear);
+   clear = ~(1>>b);
+   printf("%d",a&clear);
 
     return 0;
 }
