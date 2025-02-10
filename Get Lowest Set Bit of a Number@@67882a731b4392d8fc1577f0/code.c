@@ -1,9 +1,16 @@
 #include <stdio.h>
 int main() {
-    int a,bit;
+    int a,position = 0;
     scanf("%d",&a);
-    bit = a | -a;
-    printf("%d",bit);
+    if(a == 0){
+        printf("-1\n");
+    }
+
+    while((a&1) == 0){
+        a>>=1;
+        position++;
+    }
+    printf("%d",position);
 
     return 0;
 }
