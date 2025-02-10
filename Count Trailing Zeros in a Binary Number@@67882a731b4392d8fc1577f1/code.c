@@ -2,6 +2,6 @@
 int main() {
     unsigned int num;
     scanf("%u",&num);
-    printf("%d",__buitin_ctz(num));
+    printf("%d",__builtin_ctz(num));
     return 0;
 }
