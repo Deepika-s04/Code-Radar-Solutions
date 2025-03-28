@@ -12,9 +12,10 @@ int main(){
 
     for(int i = 0; i<N;i++){
         max = arr[0];
+        min = arr[0];
         if(arr[i]>max){
             max = arr[i];
-        }else{
+        }else if (arr[i]<min){
             min = arr[i];
         }
     }
