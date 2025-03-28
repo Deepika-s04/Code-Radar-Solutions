@@ -1,20 +1,30 @@
-// Your code here...
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int N;
-    int evencount = 0,oddcount = 0;
-    scanf("%d",&N);
+    int evencount = 0, oddcount = 0;
+
+    // Read N first
+    scanf("%d", &N);
+
+    // Now declare array after knowing N
     int arr[N];
-    for(int i = 0; i<N ;i++){
-    scanf("%d ",arr[i]);
+
+    // Read array elements
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);  // Fix: Pass address of arr[i]
     }
-    for(int i = 0;i<N;i++){
-        if(arr[i]%2==0){
-        evencount++;
-        }else{
-        oddcount++;
+
+    // Count even and odd numbers
+    for(int i = 0; i < N; i++) {
+        if(arr[i] % 2 == 0)
+            evencount++;
+        else
+            oddcount++;
     }
-}
-printf("%d %d \n",evencount,oddcount);
-return 0;
+
+    // Print results
+    printf("%d %d\n", evencount, oddcount);
+
+    return 0;
 }
