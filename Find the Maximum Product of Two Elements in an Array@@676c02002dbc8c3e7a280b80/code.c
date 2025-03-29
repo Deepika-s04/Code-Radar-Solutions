@@ -4,7 +4,7 @@
 
 int main(){
     int size;
-    scanf("5d",&size);
+    scanf("%d",&size);
 
     int arr[size];
 
