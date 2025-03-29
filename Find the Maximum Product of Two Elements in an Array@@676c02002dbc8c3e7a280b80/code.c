@@ -23,4 +23,5 @@ int main(){
 
     int maxproduct = (firstmax-1)*(secondmax-1);
     printf("%d\n",maxproduct);
+    return 0;
 }
