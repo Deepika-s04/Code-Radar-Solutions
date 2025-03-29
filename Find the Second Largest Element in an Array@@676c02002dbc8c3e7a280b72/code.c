@@ -23,9 +23,8 @@ int main(){
         }
     }
 
-    for(int i = size - 1; i >= 0; i--){
-        printf("%d\n",arr[2]);
-    }
+    printf("%d\n",arr[size-2]);
+
 
 
 
