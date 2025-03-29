@@ -1,28 +1,27 @@
 #include<stdio.h>
 int main(){
     int n;
+    int digit;
+    int reverse = 0;
+    int count = 0;
     scanf("%d",&n);
     int a[n];
     int count = 0;
     for(int i = 0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    int digit,reversed = 0;
-
     for(int i = 0;i<n;i++){
-        while(a[i]>0){
-            digit  = a[i]%10;
-            reversed = reversed*10+digit;
-            a[i] = a[i]/10;
+        int num = a[i];
+        while(num>0){
+            digit = num%10;
+            reverse = reverse*10+num;
+            num = num/10;
         }
-    }
 
-    for(int i = 0;i<n;i++){
-        if(a[i]==reversed){
+        if(a[i] == reversed){
             count++;
         }
     }
     printf("%d",count);
-
     return 0;
 }
