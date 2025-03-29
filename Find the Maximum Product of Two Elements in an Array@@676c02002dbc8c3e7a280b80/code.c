@@ -6,6 +6,10 @@ int main(){
     int size;
     scanf("%d",&size);
 
+    if(size<2){
+        return 0;
+    }
+
     int arr[size];
 
     for(int i = 0; i < size; i++){
@@ -24,7 +28,7 @@ int main(){
         }
     }
 
-    int maxproduct = (firstmax-1)*(secondmax-1);
+    int maxproduct = (firstmax-1) * (secondmax-1);
     printf("%d\n",maxproduct);
     return 0;
 }
