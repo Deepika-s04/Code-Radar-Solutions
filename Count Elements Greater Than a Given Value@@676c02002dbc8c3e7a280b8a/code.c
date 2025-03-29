@@ -4,7 +4,7 @@ int main(){
     int N;
     scanf("%d",&N);
 
-     int K;
+    int K;
     scanf("%d",&K);
 
     int arr[N];
@@ -12,12 +12,12 @@ int main(){
     for(int i = 0;i<N;i++){
         scanf("%d",&arr[i]);
     }
+
     int count = 0;
 
     for(int i = 0;i<N;i++){
         if(arr[i] > K){
             count++;
-            break;
         }
     }
 
