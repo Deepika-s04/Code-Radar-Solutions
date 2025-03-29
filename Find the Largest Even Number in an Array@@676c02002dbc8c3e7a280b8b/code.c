@@ -21,24 +21,24 @@
 
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
 int main() {
     int size, maxEven = -1; // Initialize maxEven to -1
     
+    printf("Enter the size of the array: ");
     scanf("%d", &size);
     
     int arr[size];
+    printf("Enter %d elements: ", size);
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
-        
-        // Check if it's even and either first even found or greater than maxEven
-        if (arr[i] % 2 == 0 && (maxEven == -1 || arr[i] > maxEven)) { 
+        if (arr[i] % 2 == 0 && arr[i] > maxEven) { // Check if the number is even and largest so far
             maxEven = arr[i];
         }
     }
     
-    printf("%d\n", maxEven);
+    printf("Largest even number: %d\n", maxEven);
     
     return 0;
 }
