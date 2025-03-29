@@ -15,7 +15,10 @@ int main() {
     for (int i = 0; i < n; i++) {
         int num = arr[i];
         int sum = 0;
-        while (1) {
+
+        num = (num < 0) ? -num : num;
+        
+        while (num>0) {
             sum += num % 10;  // Extract last digit and add to sum
             num /= 10;        // Remove last digit
         }
