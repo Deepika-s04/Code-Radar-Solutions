@@ -13,7 +13,7 @@ int main(){
 
 
     for(int i = 0; i < size; i++){
-        int(int j = i + 1; j < size; j++){
+        for(int j = i + 1; j < size; j++){
             if(arr[i] > arr[j]){
                 temp = arr[i];
                 arr[i] = arr[j];
