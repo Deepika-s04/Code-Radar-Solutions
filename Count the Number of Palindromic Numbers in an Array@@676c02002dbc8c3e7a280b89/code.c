@@ -7,7 +7,7 @@ int main(){
     for(int i = 0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int digit,reversed = 0
+    int digit,reversed = 0;
 
     for(int i = 0;i<n;i++){
         while(a[i]>0){
