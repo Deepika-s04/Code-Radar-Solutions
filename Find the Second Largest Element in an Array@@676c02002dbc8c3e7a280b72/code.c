@@ -1,5 +1,7 @@
 // Your code here...
 #include<stdio.h>
+#include<limits.h>
+
 int main(){
     int size;
     scanf("%d",&size);
@@ -9,18 +11,22 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int temp;
+    int first = INT_MIN;
+    int second = INT_MIN;
+
     for(int i = 0; i < size; i++){
-        for(int j = i + 1; j < size; j++){
-            if(arr[i] > arr[j]){
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
+        if(arr[i] > first){
+            first = arr[i];
+            second = first;
+        }else if(arr[i] > second && arr[i] != first){
+            second = arr[i];
         }
     }
 
-    printf("%d\n",arr[1]);
+    printf("%d\n",second);
+
+
+
 
 
 
