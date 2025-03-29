@@ -20,9 +20,11 @@ int main(){
             first = arr[i];
         }else if(arr[i] > second && arr[i] != first){
             second = arr[i];
-        }else{
-            printf("-1");
         }
+    }
+
+    if(size<2){
+        printf("-1\n");
     }
 
     printf("%d\n",second);
