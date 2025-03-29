@@ -3,7 +3,6 @@ int main(){
     int n;
     int digit;
     int reverse = 0;
-    int count = 0;
     scanf("%d",&n);
     int a[n];
     int count = 0;
