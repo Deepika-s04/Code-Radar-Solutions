@@ -17,7 +17,7 @@ int main(){
             num = num/10;
         }
 
-        if(a[i] == reversed){
+        if(a[i] == reverse){
             count++;
         }
     }
