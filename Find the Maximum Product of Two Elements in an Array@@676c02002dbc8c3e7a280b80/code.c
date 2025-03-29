@@ -34,7 +34,7 @@ int main(){
 
     int arr[size];
 
-    for(int i = 0; i<size;i++){
+    for(int i = 0; i<size-1;i++){
         scanf("%d",&arr[i]);
     }
 
@@ -48,6 +48,8 @@ int main(){
     }
 
     printf("%d\n",a*b);
+
+    return 0;
 
 
 
