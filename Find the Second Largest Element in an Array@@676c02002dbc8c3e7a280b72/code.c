@@ -9,17 +9,26 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int large1 = 0;
-    int large2 = 0;
+    int temp;
+    int i;
+    int j;
+
     for(int i = 0; i < size; i++){
-        if(arr[i] > large1){
-            large1 = arr[i];
-            large2 = large1;
-        }else if(arr[i] > large2){
-            large2 = arr[i];
+        int(j = i + 1; j < size; j++){
+            if(arr[i] > arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
 
-    printf("%d\n",large2);
+    for(int i = size - 1; i >= 0; i--){
+        printf("%d\n",arr[2]);
+    }
+
+
+
+
     return 0;
 }
