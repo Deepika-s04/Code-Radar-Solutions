@@ -11,7 +11,7 @@ int main(){
         int num = a[i]; reversed = 0; digit;
         while(num>0){
             digit = num % 10;
-            reversed = reverse * 10 + num;
+            reversed = reversed * 10 + num;
             num = num/10;
         }
 
