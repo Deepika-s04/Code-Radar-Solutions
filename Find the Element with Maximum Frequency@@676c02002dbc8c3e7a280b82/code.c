@@ -3,7 +3,7 @@
 #include<stdio.h>
 int main(){
     int s;
-    scanf("%d",%d);
+    scanf("%d",&s);
 
     int a[s];
 
