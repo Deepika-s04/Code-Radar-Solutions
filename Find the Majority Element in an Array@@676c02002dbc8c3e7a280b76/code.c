@@ -17,16 +17,18 @@ int main(){
     for(int i = 0; i < size; i++){
         for(int j = i+1; j < size; j++){
             if(arr[i] == arr[j]){
-                m = arr[i];
                 count++;
             }
         }
-    }
 
-    if(count > majority){
-        printf("%d",m);
-    }else{
-        printf("-1");
-    }
+        if(count > majority){
+            printf("%d",arr[i]);
+        }else{
+            printf("-1\n");
+        }   
+        }
+
+
+    return 0;
     
 }
