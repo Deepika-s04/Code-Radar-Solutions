@@ -1,40 +1,33 @@
-#include <stdio.h>
-
-int main() {
+// Your code here...
+#include<stdio.h>
+int main(){
     int size;
-    scanf("%d", &size);
-
-    if (size <= 0) {
-
-        return 1;
-    }
+    scanf("%d",&size);
 
     int arr[size];
 
-    for (int i = 0; i < size; i++) {
-        scanf("%d", &arr[i]);
+    for(int i = 0;i<size;i++){
+        scanf("%d",&arr[i]);
     }
 
-    // Sorting using Bubble Sort (not efficient but works for small input sizes)
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = i + 1; j < size; j++) {
-            if (arr[i] > arr[j]) {
-                // Swap
-                int temp = arr[i];
+    int temp;
+
+    for(int i =0;i<size;i++){
+        for(int j =i+1;j<size;j++){
+            if(arr[i]>arr[j]){
+                temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
     }
 
-    // Correct median calculation
-    int mid = size / 2;
+    int mid = size/2;
 
-    if (size % 2 == 0) {
-        printf("%d\n", arr[mid - 1]);  // First middle element
-    } else {
-        printf("%d\n", arr[mid]);  // Middle element
+    if(size%2==0){
+        printf("%d",arr[mid-1]);
+    }else{
+        printf("%d",arr[mid]);
     }
-
     return 0;
 }
