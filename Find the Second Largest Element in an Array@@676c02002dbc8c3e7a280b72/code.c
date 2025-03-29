@@ -10,8 +10,6 @@ int main(){
     }
 
     int temp;
-
-
     for(int i = 0; i < size; i++){
         for(int j = i + 1; j < size; j++){
             if(arr[i] > arr[j]){
@@ -22,7 +20,7 @@ int main(){
         }
     }
 
-    printf("%d\n",arr[size-2]);
+    printf("%d\n",arr[1]);
 
 
 
