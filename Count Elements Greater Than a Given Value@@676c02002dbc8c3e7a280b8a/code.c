@@ -12,15 +12,16 @@ int main() {
 
     int K;
     scanf("%d", &K);
-    int count = 0;
 
-    // Count elements greater than K
+    int found = 0;  // Flag to check if an element greater than K exists
+
     for (int i = 0; i < N; i++) {
         if (arr[i] > K) {
-            count++;  // Increment count instead of breaking
+            found = 1;  // Mark found
+            break;  // No need to check further
         }
     }
 
-    printf("%d", count);
+    printf("%d", found);  // Print 1 if found, otherwise 0
     return 0;
 }
