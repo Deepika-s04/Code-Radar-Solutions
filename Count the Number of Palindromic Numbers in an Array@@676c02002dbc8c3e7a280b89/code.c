@@ -1,13 +1,15 @@
 #include<stdio.h>
 int main(){
-    int n;
+    int n,count = 0;
+
     scanf("%d",&n);
     int a[n];
-    int count = 0;
-    for(int i = 0;i<n;i++){
+
+    for(int i = 0;i < n; i++){
         scanf("%d",&a[i]);
     }
-    for(int i = 0;i<n;i++){
+
+    for(int i = 0; i < n; i++){
         int num = a[i];
         int reversed = 0; digit;
         while(num>0){
@@ -20,7 +22,7 @@ int main(){
             count++;
         }
     }
-    printf("%d",count);
+    printf("%d\n",count);
     return 0;
 }
 
