@@ -34,20 +34,23 @@ int main(){
 
     int arr[size];
 
-    for(int i = 0; i<size-1;i++){
+    for(int i = 0; i<size;i++){
         scanf("%d",&arr[i]);
     }
 
     int a = arr[0];
     int b = arr[1];
+    int maxproduct = a*b;
+    int product;
+
     for(int i = 0;i<size;i++){
-        if(arr[i]*arr[i+1] > a*b){
-            a = arr[i];
-            b = arr[i+1];
+        int product = arr[i]*arr[i+1]
+        if(product > maxproduct){
+            maxproduct = product;
         }
     }
 
-    printf("%d\n",a*b);
+    printf("%d\n",maxproduct);
 
     return 0;
 
