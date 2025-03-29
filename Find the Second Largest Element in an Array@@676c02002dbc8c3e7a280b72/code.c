@@ -16,8 +16,8 @@ int main(){
 
     for(int i = 0; i < size; i++){
         if(arr[i] > first){
-            first = arr[i];
             second = first;
+            first = arr[i];
         }else if(arr[i] > second && arr[i] != first){
             second = arr[i];
         }
