@@ -12,14 +12,11 @@ int main(){
 
     int arr[size];
 
-    for(int i = 0; i < size; i++){
-        scanf("%d",&arr[i]);
-    }
-
-    int firstmax = INT_MIN;
+     int firstmax = INT_MIN;
     int secondmax = INT_MIN;
 
     for(int i = 0; i < size; i++){
+        scanf("%d",&arr[i]);
         if(arr[i]>firstmax){
             secondmax = firstmax;
             firstmax = arr[i];
