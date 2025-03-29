@@ -9,7 +9,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int large1 = 0;large2 = 0;
+    int large1 = 0;
+    int large2 = 0;
     for(int i = 0; i < size; i++){
         if(arr[i] > large1){
             large1 = arr[i];
