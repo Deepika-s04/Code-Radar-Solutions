@@ -22,11 +22,11 @@ int main(){
         }
     }
 
+    int mid = size/2;
+
     if(size%2==0){
-        int mid = size/2;
-        printf("%d",arr[mid]);
+        printf("%d",arr[mid-1]);
     }else{
-        int mid = (size/2)+1;
         printf("%d",arr[mid]);
     }
     return 0;
