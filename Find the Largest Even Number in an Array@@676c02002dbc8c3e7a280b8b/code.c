@@ -26,11 +26,11 @@
 int main() {
     int size, maxEven = -1; // Initialize maxEven to -1
     
-    printf("Enter the size of the array: ");
+
     scanf("%d", &size);
     
     int arr[size];
-    printf("Enter %d elements: ", size);
+   
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
         if (arr[i] % 2 == 0 && arr[i] > maxEven) { // Check if the number is even and largest so far
@@ -38,7 +38,7 @@ int main() {
         }
     }
     
-    printf("Largest even number: %d\n", maxEven);
+    printf("%d\n", maxEven);
     
     return 0;
 }
