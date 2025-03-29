@@ -20,17 +20,11 @@ int main(){
             first = arr[i];
         }else if(arr[i] > second && arr[i] != first){
             second = arr[i];
+        }else{
+            printf("-1");
         }
     }
 
     printf("%d\n",second);
-
-
-
-
-
-
-
-
     return 0;
 }
