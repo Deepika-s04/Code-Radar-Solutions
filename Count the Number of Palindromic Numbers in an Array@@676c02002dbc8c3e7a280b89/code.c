@@ -8,7 +8,8 @@ int main(){
         scanf("%d",&a[i]);
     }
     for(int i = 0;i<n;i++){
-        int num = a[i]; reversed = 0; digit;
+        int num = a[i];
+        int reversed = 0; digit;
         while(num>0){
             digit = num % 10;
             reversed = reversed * 10 + num;
