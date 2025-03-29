@@ -13,12 +13,18 @@ int main(){
     int T;
     scanf("%d",&T);
 
+    int found = 0;
+
     for(int i = 0; i< N ;i++){
         if(a[i] == T){
             printf("%d\n",i);
-        }else{
-            printf("-1\n");
+            found = 1;
+            break;
         }
+    }
+
+    if(found != 1){
+        printf("-1\n");
     }
 
     return 0;
