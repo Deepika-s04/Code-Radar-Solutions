@@ -17,6 +17,7 @@ int main(){
     for(int i = 0;i<N;i++){
         if(arr[i] > K){
             count++;
+            break;
         }
     }
 
