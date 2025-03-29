@@ -44,7 +44,7 @@ int main(){
     int product;
 
     for(int i = 0;i<size;i++){
-        int product = arr[i]*arr[i+1]
+        int product = arr[i]*arr[i+1];
         if(product > maxproduct){
             maxproduct = product;
         }
