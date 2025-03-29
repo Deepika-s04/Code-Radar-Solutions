@@ -21,7 +21,7 @@
 
 // }
 
-// #include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int size, maxEven = -1; // Initialize maxEven to -1
