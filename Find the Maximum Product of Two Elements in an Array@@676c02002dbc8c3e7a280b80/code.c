@@ -1,5 +1,7 @@
 // Your code here...
 #include<stdio.h>
+#include<limits.h>
+
 int main(){
     int size;
     scanf("5d",&size);
@@ -10,13 +12,14 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int firstmax = 0;
-    int secondmax = 0;
+    int firstmax = INT_MIN;
+    int secondmax = INT_MIN;
+
     for(int i = 0; i < size; i++){
         if(arr[i]>firstmax){
-            firstmax = arr[i];
             secondmax = firstmax;
-        }else if(arr[i]>secondmax){
+            firstmax = arr[i];
+        }else if(arr[i]>secondmax && arr[i]!=firstmax){
             secondmax = arr[i];
         }
     }
