@@ -6,6 +6,11 @@ int main(){
     int size;
     scanf("%d",&size);
 
+    if(size<2){
+        printf("-1\n");
+        return 0;
+    }
+
     int arr[size];
     for(int i = 0;i < size; i++){
         scanf("%d",&arr[i]);
@@ -23,9 +28,6 @@ int main(){
         }
     }
 
-    if(size<2){
-        printf("-1\n");
-    }
 
     printf("%d\n",second);
     return 0;
