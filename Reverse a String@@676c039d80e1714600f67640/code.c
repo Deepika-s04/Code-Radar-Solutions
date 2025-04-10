@@ -3,7 +3,14 @@
 int main(){
     int length = 0;
     char str[100];
-    fgets(str,100,stdin);
+    fgets(str,sizeof(str),stdin);
+
+    for(int j = 0;str[j]!='\0';i++){
+        if(str[j]=='\n'){
+            str[j]=='\0';
+            break;
+        }
+    }
     while(str[i]!='\0'){
         length++;
     }
