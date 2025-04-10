@@ -10,10 +10,10 @@ int main(){
     }
 
     char old;
-    scanf(" %c",&s2);
+    scanf(" %c",&old);
 
     char new;
-    scanf(" %c",&s3),
+    scanf(" %c",&new),
 
     for(int i=0;str[i]!='\0';i++){
         if(str[i]==old){
